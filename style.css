@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+
+/* Aqui estou zerando a margem e o padding do Viewport*/
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Code Pro', monospace; 
+    background-image: url(./imgs/largoPaisandu.jpg);
+    background-size: cover; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 25pt;
+    text-shadow: black 0.1em 0.1em 0.4em;
+    font-style: italic; /*Aqui estou aplicando um estilo na fonte, que independe da importação do google fonts, é nativo do CSS*/
+    font-weight: 900; /*Aqui sim dependendo do import que fiz do google fonts, pois estou aderindo o peso da fonte importada nest elemento*/
+    padding: 15px 28%;
+    margin: 20px;
+}
+
+.fundoTitulo{
+    border-radius: 25px 8px 25px 8px;
+    padding: 5px;
+    backdrop-filter: blur(5px); /* Este seletor causa efeitos no background do elemento selecionado, desfoque -blur() ; deixa acinzentado e etc. */
+}
+
+.paragrafo{
+    color: white;
+    font-size: 18pt;
+    font-weight: 400;
+    text-align: justify; /*Aqui estou alinhando o texto centralizado pegando como referência o Viewport, e o atributo justify para justificar o texto*/
+    text-shadow: black 2pt 2pt 0.1em;
+    backdrop-filter: blur(3px);
+    padding: 20px 150px
+
+}
+
+p{
+    border-left: solid white 5px;
+    padding: 0px 20px;
+}
+
+.video{
+    margin: 50px 0px ;
+}
+
+iframe{
+    padding: 10px;
+    display: block; /* para alinhar um elemento como imagem ou vídeo temos que colocar este seletor de bloqueio pois ele fixa o tamanho do elemento*/
+    /* e como complemento passamos as margens a sua esquerda e direita como automáticas, assim ele se centraliza, caso contrário sem passarmos o display: block o elemento asumiria a largura total disponível*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.lista{
+    color: white;
+    font-size: 18pt;
+    text-align: justify;
+    text-shadow: black 1pt 2pt 0pt;
+    padding: 20px 150px 30px;
+    backdrop-filter: blur(3px);
+}
+
+ul{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+li{
+    padding: 5px;
+}
+
+.tituloLista{
+    color: ivory;
+    font-family: 'Source Code Pro';
+    font-size: 25pt;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 50px 30px 10px;
+    padding: 20px;
+}
+
+a{
+    margin: 15px;
+}
